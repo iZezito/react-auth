@@ -245,7 +245,7 @@ import {
 } from "@/components/ui/input-otp";
 import { setCookie } from "nookies";
 import { useAuth } from "@/contexts/AuthContext";
-import api from "@/services/api";
+import { Mail, Lock } from "lucide-react"
 
 const loginSchema = z.object({
   email: z.string().email("E-mail inválido"),

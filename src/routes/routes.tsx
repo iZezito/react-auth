@@ -9,6 +9,7 @@ import Profile from "@/pages/profile";
 import ForgotPasswordForm from "@/pages/forgot-password";
 import ResetPasswordForm from "@/pages/reset-password";
 import EmailValidation from "@/pages/validate-email";
+import Home from "@/pages/home";
 
 const allRoutes = () => {
   const publicRoutes = [
@@ -16,6 +17,7 @@ const allRoutes = () => {
       path: "/",
       element: <PublicRoute />,
       children: [
+        { path: '/', element: <Home/>},
         { path: "sobre", element: <Sobre /> },
       ],
     },

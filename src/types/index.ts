@@ -77,10 +77,6 @@ export type Usuario = {
   id: number,
 };
 
-export type Questao = {
-  id: number,
-};
-
 type Pageable = {
   sort: Sort;
   offset: number;
